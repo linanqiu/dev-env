@@ -16,7 +16,6 @@ RUN echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc &&\
     echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc &&\
     source ~/.bashrc &&\
     gem install jekyll bundler
-EXPOSE 4000
 
 USER ${NB_UID}
 
