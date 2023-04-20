@@ -23,6 +23,6 @@ USER ${NB_UID}
 RUN pip install \
     treelite treelite_runtime
 
-
+RUN Rscript -e "install.packages(c('arrow', 'xgboost'))"
 
 
